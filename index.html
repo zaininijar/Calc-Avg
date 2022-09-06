@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Static Template</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      th {
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex flex-col h-screen bg-gray-100">
+      <div class="grid place-items-center mx-2 my-20 sm:my-auto">
+        <div class="flex">
+          <span class="text-center font-bold my-20 mx-auto">
+            <a
+              href="https://egoistdeveloper.github.io/twcss-to-sass-playground/"
+              target="_blank"
+              class="text-blue-600 capitalize"
+            >
+              calculate the average value
+            </a>
+          </span>
+        </div>
+
+        <div
+          class="w-11/12 p-12 sm:w-8/12 md:w-6/12 lg:w-5/12 2xl:w-4/12 px-6 py-10 sm:px-10 sm:py-6 bg-white rounded-lg shadow-md lg:shadow-lg"
+        >
+          <h2
+            class="text-center font-semibold text-3xl lg:text-4xl text-gray-800"
+          >
+            Input Value
+          </h2>
+
+          <form class="mt-10" method="POST">
+            <div class="flex items-center justify-center">
+              <label
+                for="pai"
+                class="whitespace-nowrap p-3 w-[20%] border-b-2 font-semibold text-gray-600 uppercase"
+                >PAI :
+              </label>
+              <input
+                id="pai"
+                type="number"
+                name="pai"
+                placeholder="..."
+                class="w-[80%] block text-center w-full py-3 px-1 text-gray-800 appearance-none border-b-2 border-gray-100 focus:text-gray-500 focus:outline-none focus:border-gray-200"
+                required
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <label
+                for="ppk"
+                class="whitespace-nowrap p-3 w-[20%] border-b-2 font-semibold text-gray-600 uppercase"
+                >PPK :
+              </label>
+              <input
+                id="ppk"
+                type="number"
+                name="ppk"
+                placeholder="..."
+                class="w-[80%] block text-center w-full py-3 px-1 text-gray-800 appearance-none border-b-2 border-gray-100 focus:text-gray-500 focus:outline-none focus:border-gray-200"
+                required
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <label
+                for="bi"
+                class="whitespace-nowrap p-3 w-[20%] border-b-2 font-semibold text-gray-600 uppercase"
+                >BI :
+              </label>
+              <input
+                id="bi"
+                type="number"
+                name="bi"
+                placeholder="..."
+                class="w-[80%] block text-center w-full py-3 px-1 text-gray-800 appearance-none border-b-2 border-gray-100 focus:text-gray-500 focus:outline-none focus:border-gray-200"
+                required
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <label
+                for="mtk"
+                class="whitespace-nowrap p-3 w-[20%] border-b-2 font-semibold text-gray-600 uppercase"
+                >MTK :
+              </label>
+              <input
+                id="mtk"
+                type="number"
+                name="mtk"
+                placeholder="..."
+                class="w-[80%] block text-center w-full py-3 px-1 text-gray-800 appearance-none border-b-2 border-gray-100 focus:text-gray-500 focus:outline-none focus:border-gray-200"
+                required
+              />
+            </div>
+
+            <div class="flex items-center justify-center">
+              <label
+                for="bing"
+                class="whitespace-nowrap p-3 w-[20%] border-b-2 font-semibold text-gray-600 uppercase"
+                >BING :
+              </label>
+              <input
+                id="bing"
+                type="number"
+                name="bing"
+                placeholder="..."
+                class="w-[80%] block text-center w-full py-3 px-1 text-gray-800 appearance-none border-b-2 border-gray-100 focus:text-gray-500 focus:outline-none focus:border-gray-200"
+                required
+              />
+            </div>
+
+            <div class="flex items-center justify-center">
+              <label
+                for="bd"
+                class="whitespace-nowrap p-3 w-[20%] border-b-2 font-semibold text-gray-600 uppercase"
+                >BD :
+              </label>
+              <input
+                id="bd"
+                type="number"
+                name="bd"
+                placeholder="..."
+                class="w-[80%] block text-center w-full py-3 px-1 text-gray-800 appearance-none border-b-2 border-gray-100 focus:text-gray-500 focus:outline-none focus:border-gray-200"
+                required
+              />
+            </div>
+
+            <div class="flex items-center justify-center">
+              <label
+                for="pbo"
+                class="whitespace-nowrap p-3 w-[20%] border-b-2 font-semibold text-gray-600 uppercase"
+                >PBO :
+              </label>
+              <input
+                id="pbo"
+                type="number"
+                name="pbo"
+                placeholder="..."
+                class="w-[80%] block text-center w-full py-3 px-1 text-gray-800 appearance-none border-b-2 border-gray-100 focus:text-gray-500 focus:outline-none focus:border-gray-200"
+                required
+              />
+            </div>
+
+            <div class="flex items-center justify-center">
+              <label
+                for="pwpb"
+                class="whitespace-nowrap p-3 w-[20%] border-b-2 font-semibold text-gray-600 uppercase"
+                >PWPB :
+              </label>
+              <input
+                id="pwpb"
+                type="number"
+                name="pwpb"
+                placeholder="..."
+                class="w-[80%] block text-center w-full py-3 px-1 text-gray-800 appearance-none border-b-2 border-gray-100 focus:text-gray-500 focus:outline-none focus:border-gray-200"
+                required
+              />
+            </div>
+
+            <div class="flex items-center justify-center">
+              <label
+                for="pkk"
+                class="whitespace-nowrap p-3 w-[20%] border-b-2 font-semibold text-gray-600 uppercase"
+                >PKK :
+              </label>
+              <input
+                id="pkk"
+                type="number"
+                name="pkk"
+                placeholder="..."
+                class="w-[80%] block text-center w-full py-3 px-1 text-gray-800 appearance-none border-b-2 border-gray-100 focus:text-gray-500 focus:outline-none focus:border-gray-200"
+                required
+              />
+            </div>
+
+            <button
+              id="btn-calc"
+              type="button"
+              class="w-full py-3 mt-10 bg-gray-800 rounded-sm font-medium text-white uppercase focus:outline-none hover:bg-gray-700 hover:shadow-none"
+            >
+              Calculate
+            </button>
+            <div class="py-4">
+              <div class="flex justify-between">
+                <h1 class="text-lg">Average :</h1>
+                <h1 class="text-xl font-bold" id="average"></h1>
+              </div>
+              <div class="flex justify-between">
+                <h1 class="text-lg">Total :</h1>
+                <h1 class="text-xl font-bold" id="total"></h1>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
